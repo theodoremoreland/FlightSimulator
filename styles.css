@@ -4,3 +4,7 @@
     height: 80%;
     width: 40%;
 }
+
+#rocket {
+    position: relative;
+}
