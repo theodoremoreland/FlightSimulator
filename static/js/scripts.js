@@ -6,13 +6,12 @@ window.addEventListener("load", function (event) {
 });
 
 function takeoff() {
-    let button = document.querySelector("#takeoff");
-    let status = document.querySelector("#flightStatus");
-    let background = document.querySelector("#shuttleBackground");
-    let height = document.querySelector("#spaceShuttleHeight");
-    let rocket = document.querySelector("#rocket");
+    const button = document.querySelector("#takeoff");
+    const status = document.querySelector("#flightStatus");
+    const background = document.querySelector("#shuttleBackground");
+    const height = document.querySelector("#spaceShuttleHeight");
+    const rocket = document.querySelector("#rocket");
 
-    
     rocket.style.top = "250px";
     let rocketTop = parseInt(rocket.style.top);
 
@@ -32,11 +31,11 @@ function takeoff() {
 }
 
 function land() {
-    let button = document.querySelector("#landing");
-    let status = document.querySelector("#flightStatus");
-    let background = document.querySelector("#shuttleBackground");
-    let height = document.querySelector("#spaceShuttleHeight");
-    let rocket = document.querySelector("#rocket");
+    const button = document.querySelector("#landing");
+    const status = document.querySelector("#flightStatus");
+    const background = document.querySelector("#shuttleBackground");
+    const height = document.querySelector("#spaceShuttleHeight");
+    const rocket = document.querySelector("#rocket");
 
     button.addEventListener("click", function () {
         if (height.innerHTML === "0") {
@@ -53,11 +52,11 @@ function land() {
 }
 
 function abort() {
-    let button = document.querySelector("#missionAbort");
-    let status = document.querySelector("#flightStatus");
-    let background = document.querySelector("#shuttleBackground");
-    let height = document.querySelector("#spaceShuttleHeight");
-    let rocket = document.querySelector("#rocket");
+    const button = document.querySelector("#missionAbort");
+    const status = document.querySelector("#flightStatus");
+    const background = document.querySelector("#shuttleBackground");
+    const height = document.querySelector("#spaceShuttleHeight");
+    const rocket = document.querySelector("#rocket");
 
     button.addEventListener("click", function () {
         let ready = confirm("Confirm that you want to abort the mission.");
@@ -72,10 +71,10 @@ function abort() {
 }
 
 function move() {
-    let height = document.querySelector("#spaceShuttleHeight");
-    let rocket = document.querySelector("#rocket");
-    let status = document.querySelector("#flightStatus");
-    let background = document.querySelector("#shuttleBackground");
+    const height = document.querySelector("#spaceShuttleHeight");
+    const rocket = document.querySelector("#rocket");
+    const status = document.querySelector("#flightStatus");
+    const background = document.querySelector("#shuttleBackground");
 
     // Sets rocket position programmatically as to add inline styling thus enabling accurate references via
     // ...JavaScript .style
